@@ -9,7 +9,8 @@ genrate change log for git repo
 ### install
 
 ```sh
-npm install change-log --save-dev
+#npm install change-log --save-dev
+npm install https://github.com/YMC-GitHub/js-lib-change-log.git --save-dev
 ```
 
 ### config
