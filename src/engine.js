@@ -1,4 +1,4 @@
-import Model from './model';
+import Model from './Model';
 import mixin from './mixin';
 import makeSugar from './class-sugar';
 

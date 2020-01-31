@@ -1,7 +1,7 @@
 // include some lib
 const path = require('path');
 
-const rootPath = path.resolve(__dirname, '..');
+const rootPath = process.cwd();
 // eslint-disable-next-line no-unused-vars
 const resolve = file => path.resolve(rootPath, file);
 
