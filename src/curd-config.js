@@ -1,7 +1,7 @@
 const mixins = {
   set: function(key, val) {
     let hasVal;
-    let { options, data } = this;
+    let { options } = this;
     if (val || val === '' || val === 0 || val === false) {
       hasVal = true;
     } else {
@@ -9,9 +9,7 @@ const mixins = {
     }
     // set when (key,val)
     if (key && hasVal) {
-      if (key in options) {
-        data[key] = val;
-      }
+      options[key] = val;
     }
     return this;
   },

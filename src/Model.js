@@ -1,8 +1,8 @@
 class Feat {
-  constructor(opts, data) {
-    this.init(opts, data);
+  constructor(opts) {
+    this.init(opts);
   }
-  init(opts, data) {
+  init(opts) {
     this.options = Object.assign(
       {},
       {
@@ -11,7 +11,6 @@ class Feat {
       },
       opts || {}
     );
-    this.data = Object.assign({}, data || {});
     return this;
   }
 }
