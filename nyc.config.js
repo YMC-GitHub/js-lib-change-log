@@ -16,5 +16,5 @@ module.exports = {
   'report-dir': './coverage',
   'temp-dir': './.nyc_output',
   sourceMap: true,
-  instrument: true
-};
+  instrument: true,
+}

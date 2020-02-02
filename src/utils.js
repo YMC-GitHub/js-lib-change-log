@@ -1,17 +1,18 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require('fs')
+const path = require('path')
 
+// eslint-disable-next-line consistent-return
 exports.mkdirsSync = function(dirname) {
   // has dir?
   if (fs.existsSync(dirname)) {
-    return true;
+    return true
   }
   // does not?create dir
   if (exports.mkdirsSync(path.dirname(dirname))) {
-    fs.mkdirSync(dirname);
-    return true;
+    fs.mkdirSync(dirname)
+    return true
   }
-};
+}
 
 // exports.camelCase = x => x.charAt(0).toUpperCase() + x.slice(1).toLowerCase()
 exports.camelCase = str =>
@@ -20,11 +21,11 @@ exports.camelCase = str =>
       .split(/[_.-]/)
       .map(x => x.charAt(0).toUpperCase() + x.slice(1).toLowerCase())
       .join('')
-  );
+  )
 
-exports.startWithSmall = x => x.charAt(0).toLowerCase() + x.slice(1);
-exports.funcName = exports.camelCase;
+exports.startWithSmall = x => x.charAt(0).toLowerCase() + x.slice(1)
+exports.funcName = exports.camelCase
 
 exports.readyPromise = function() {
-  return Promise.resolve();
-};
+  return Promise.resolve()
+}

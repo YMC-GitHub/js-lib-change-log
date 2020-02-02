@@ -1,12 +1,12 @@
 // engine.config(options).writeToFs()
-import engine from './engine';
+import engine from './engine'
 
 // include some data
-import options from './config';
+import options from './config'
 
 // simple usage
-engine.config(options).writeToFs();
+engine.config(options).writeToFs()
 // console.log(engine)
-engine.config(options);
+engine.config(options)
 
-export default engine;
+export default engine
