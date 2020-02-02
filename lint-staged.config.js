@@ -1,7 +1,10 @@
 module.exports = {
   'src/*.{js,json,css}': [
-    // "prettier --write",
+    // tells lint-staged to run prettier lib
+    'prettier --write',
+    // tells lint-staged to run eslint lib with --fix arg
     'eslint --fix',
-    'git add .'
-  ]
-};
+    // tells lint-staged  to git add all
+    // 'git add .'
+  ],
+}
