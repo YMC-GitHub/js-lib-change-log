@@ -2,9 +2,9 @@
   "name": "change-log",
   "version": "1.0.0",
   "description": "genrate change log for git repo",
-  "main": "lib/js-lib-change-log.common.js",
-  "module": "lib/js-lib-change-log.esm.js",
-  "unpkg": "lib/js-lib-change-log.js",
+  "main": "lib/change-log.common.js",
+  "module": "lib/change-log.esm.js",
+  "unpkg": "lib/change-log.min.js",
   "scripts": {
     "dev": "nodemon --legacy-watch --config config/nodemon.config.json",
     "build": "node build/rollup.pro.config.js",
@@ -39,10 +39,11 @@
     "babel-register": "^6.26.0",
     "chai": "^4.2.0",
     "commitlint-config-yemiancheng": "^1.0.0",
-    "conventional-changelog": "^3.1.10",
+    "conventional-changelog": "^3.1.18",
     "cross-env": "^5.2.1",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.0.0",
+    "eslint-config-yemiancheng": "git+https://github.com/YMC-GitHub/eslint-config.git#v1.0.0",
     "eslint-plugin-prettier": "^3.1.2",
     "husky": "^3.0.1",
     "lint-staged": "^9.2.0",
@@ -55,6 +56,12 @@
     "rollup-plugin-buble": "^0.19.8",
     "rollup-plugin-replace": "^2.2.0",
     "uglify-js": "^3.7.2"
+  },
+  "dependencies": {
+    "conventional-changelog-yemiancheng": "git+https://github.com/YMC-GitHub/js-lib-changelog-preset.git"
+  },
+  "peerDependencies": {
+    "conventional-changelog": "1.x - 3.x"
   },
   "files": [
     "lib",
